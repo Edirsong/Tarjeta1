@@ -27,23 +27,23 @@
             <h2>Envia un mensaje</h2>
             <div class="user_info">
                 <label for="names">Nombres *</label>
-                <input type="text" id="names" name="names">
+                <input type="text" id="names" name="names" required>
               
                 <label for="Apellidos">Apellidos *</label>
-                <input type="text" id="Apellidos" name="Apellidos">
+                <input type="text" id="Apellidos" name="Apellidos" required>
               
               
 
                 <label for="phone">Telefono / Celular</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required title="El teléfono debe tener 9 dígitos.">
 
                 <label for="email">Correo electronico *</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <input type="button" value="Enviar Mensaje" id="btnSend">
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
             </div>
         </form>
 
